@@ -1,81 +1,126 @@
+<!doctype html>
 
-Comments
-C1: Inappropriate Information
-C2: Obsolete Comment
-C3: Redundant Comment
-C4: Poorly Written Comment
-C5: Commented-Out Code
+<html lang="en">
+<head>
+    <meta charset="utf-8">
 
-Environment
+    <title>Smellchecker</title>
+    <meta name="description" content="Smellchecker">
+    <link rel=stylesheet href="https://s3-us-west-2.amazonaws.com/colors-css/2.2.0/colors.min.css">
+    <style>
+        html {
+            font-family: sans-serif; /* 1 */
+            -ms-text-size-adjust: 100%; /* 2 */
+            -webkit-text-size-adjust: 100%; /* 2 */
+        }
 
-E1: Build Requires More Than One Step
-E2: Tests Require More Than One Step
+        .clicklink {
+            visibility: hidden;
+            color: #AAAAAA;
+            text-decoration: none;
+        }
 
-Functions
-F1: Too Many Arguments
-F2: Output Arguments
-F3: Flag Arguments
-F4: Dead Function
+        .clicklink:hover {
+            text-decoration: underline;
+        }
 
-General
-G1: Multiple Languages in One Source File
-G2: Obvious Behavior Is Unimplemented
-G3: Incorrect Behavior at the Boundaries
-G4: Overridden Safeties
-G5: Duplication
-G6: Code at Wrong Level of Abstraction
-G7: Base Classes Depending on Their Derivatives
-G8: Too Much Information
-G9: Dead Code
-G10: Vertical Separation
-G11: Inconsistency
-G12: Clutter
-G13: Artificial Coupling
-G14: Feature Envy
-G15: Selector Arguments
-G16: Obscured Intent
-G17: Misplaced Responsibility
-G18: Inappropriate Static
-G19: Use Explanatory Variables
-G20: Function Names Should Say What They Do
-G21: Understand the Algorithm
-G22: Make Logical Dependencies Physical
-G23: Prefer Polymorphism to If/Else or Switch/Case
-G24: Follow Standard Conventions
-G25: Replace Magic Numbers with Named Constants
-G26: Be Precise
-G27: Structure over Convention
-G28: Encapsulate Conditionals
-G29: Avoid Negative Conditionals
-G30: Functions Should Do One Thing
-G31: Hidden Temporal Couplings
-G32: Don’t Be Arbitrary
-G33: Encapsulate Boundary Conditions
-G34: Functions Should Descend Only One Level of Abstraction
-G35: Keep Configurable Data at High Levels
-G36: Avoid Transitive Navigation
+        div:hover .clicklink {
+            visibility: visible;
+        }
 
-Java
-J1: Avoid Long Import Lists by Using Wildcards
-J2: Don’t Inherit Constants
-J3: Constants versus Enums
+    </style>
+</head>
 
-Names
-N1: Choose Descriptive Names
-N2: Choose Names at the Appropriate Level of Abstraction
-N3: Use Standard Nomenclature Where Possible
-N4: Unambiguous Names
-N5: Use Long Names for Long Scopes
-N6: Avoid Encodings
-N7: Names Should Describe Side-Effects
+<body>
+<h2 id="comments">Comments</h2>
+<div id="C1">
+    <h3>C1: Inappropriate Information <a class="clicklink" href="#C1">#</a></h3>
+</div>
+<div id="C2">
+    <h3>C2: Obsolete Comment <a class="clicklink" href="#C2">#</a></h3>
+</div>
+<div id="C3">
+    <h3>C3: Redundant Comment <a class="clicklink" href="#C3">#</a></h3>
+</div>
+<div id="C4">
+    <h3>C4: Poorly Written Comment <a class="clicklink" href="#C4">#</a></h3>
+</div>
+<div id="C5">
+    <h3>C5: Commented-Out Code <a class="clicklink" href="#C5">#</a></h3>
+</div>
 
-Tests
-T1: Insufficient Tests
-T2: Use a Coverage Tool!
-T3: Don’t Skip Trivial Tests
-T4: An Ignored Test Is a Question about an Ambiguity
-T5: Test Boundary Conditions
-T6: Exhaustively Test Near Bugs
-T7: Patterns of Failure Are Revealing
-T8: Test Coverage Patterns Can Be Revealing
-T9: Tests Should Be Fast
+<h2 id="environment">Environment</h2>
+
+<div id="E1"><h3>E1: Build Requires More Than One Step</h3></div>
+<div id="E2"><h3>E2: Tests Require More Than One Step</h3></div>
+
+<h2 id="functions">Functions</h2>
+<div id="F1"><h3>F1: Too Many Arguments</h3></div>
+<div id="F2"><h3>F2: Output Arguments</h3></div>
+<div id="F3"><h3>F3: Flag Arguments</h3></div>
+<div id="F4"><h3>F4: Dead Function</h3></div>
+
+<h2 id="general">General</h2>
+<div id="G1"><h3>G1: Multiple Languages in One Source File</h3></div>
+<div id="G2"><h3>G2: Obvious Behavior Is Unimplemented</h3></div>
+<div id="G3"><h3>G3: Incorrect Behavior at the Boundaries</h3></div>
+<div id="G4"><h3>G4: Overridden Safeties</h3></div>
+<div id="G5"><h3>G5: Duplication</h3></div>
+<div id="G6"><h3>G6: Code at Wrong Level of Abstraction</h3></div>
+<div id="G7"><h3>G7: Base Classes Depending on Their Derivatives</h3></div>
+<div id="G8"><h3>G8: Too Much Information</h3></div>
+<div id="G9"><h3>G9: Dead Code</h3></div>
+<div id="G10"><h3>G10: Vertical Separation</h3></div>
+<div id="G11"><h3>G11: Inconsistency</h3></div>
+<div id="G12"><h3>G12: Clutter</h3></div>
+<div id="G13"><h3>G13: Artificial Coupling</h3></div>
+<div id="G14"><h3>G14: Feature Envy</h3></div>
+<div id="G15"><h3>G15: Selector Arguments</h3></div>
+<div id="G16"><h3>G16: Obscured Intent</h3></div>
+<div id="G17"><h3>G17: Misplaced Responsibility</h3></div>
+<div id="G18"><h3>G18: Inappropriate Static</h3></div>
+<div id="G19"><h3>G19: Use Explanatory Variables</h3></div>
+<div id="G20"><h3>G20: Function Names Should Say What They Do</h3></div>
+<div id="G21"><h3>G21: Understand the Algorithm</h3></div>
+<div id="G22"><h3>G22: Make Logical Dependencies Physical</h3></div>
+<div id="G23"><h3>G23: Prefer Polymorphism to If/Else or Switch/Case</h3></div>
+<div id="G24"><h3>G24: Follow Standard Conventions</h3></div>
+<div id="G25"><h3>G25: Replace Magic Numbers with Named Constants</h3></div>
+<div id="G26"><h3>G26: Be Precise</h3></div>
+<div id="G27"><h3>G27: Structure over Convention</h3></div>
+<div id="G28"><h3>G28: Encapsulate Conditionals</h3></div>
+<div id="G29"><h3>G29: Avoid Negative Conditionals</h3></div>
+<div id="G3-"><h3>G30: Functions Should Do One Thing</h3></div>
+<div id="G31"><h3>G31: Hidden Temporal Couplings</h3></div>
+<div id="G32"><h3>G32: Don’t Be Arbitrary</h3></div>
+<div id="G33"><h3>G33: Encapsulate Boundary Conditions</h3></div>
+<div id="G34"><h3>G34: Functions Should Descend Only One Level of Abstraction</h3></div>
+<div id="G35"><h3>G35: Keep Configurable Data at High Levels</h3></div>
+<div id="G36"><h3>G36: Avoid Transitive Navigation</h3></div>
+
+<h2 id="names">Names</h2>
+<div id="N1"><h3>N1: Choose Descriptive Names</h3></div>
+<div id="N2"><h3>N2: Choose Names at the Appropriate Level of Abstraction</h3></div>
+<div id="N3"><h3>N3: Use Standard Nomenclature Where Possible</h3></div>
+<div id="N4"><h3>N4: Unambiguous Names</h3></div>
+<div id="N5"><h3>N5: Use Long Names for Long Scopes</h3></div>
+<div id="N6"><h3>N6: Avoid Encodings</h3></div>
+<div id="N7"><h3>N7: Names Should Describe Side-Effects</h3></div>
+
+<h2 id="tests">Tests</h2>
+<div id="T1"><h3>T1: Insufficient Tests</h3></div>
+<div id="T2"><h3>T2: Use a Coverage Tool!</h3></div>
+<div id="T3"><h3>T3: Don’t Skip Trivial Tests</h3></div>
+<div id="T4"><h3>T4: An Ignored Test Is a Question about an Ambiguity</h3></div>
+<div id="T5"><h3>T5: Test Boundary Conditions</h3></div>
+<div id="T6"><h3>T6: Exhaustively Test Near Bugs</h3></div>
+<div id="T7"><h3>T7: Patterns of Failure Are Revealing</h3></div>
+<div id="T8"><h3>T8: Test Coverage Patterns Can Be Revealing</h3></div>
+<div id="T9"><h3>T9: Tests Should Be Fast</h3></div>
+
+<script>
+
+</script>
+
+</body>
+</html>
